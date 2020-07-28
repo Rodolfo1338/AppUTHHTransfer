@@ -30,14 +30,36 @@ public class FrmInicio extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
+        btnlogin = new javax.swing.JMenuItem();
+        jSeparator5 = new javax.swing.JPopupMenu.Separator();
+        menuadministracion = new javax.swing.JMenu();
         btnpersonas = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         btnservicios = new javax.swing.JMenuItem();
         jSeparator2 = new javax.swing.JPopupMenu.Separator();
         btntipocuentas = new javax.swing.JMenuItem();
+        jSeparator3 = new javax.swing.JPopupMenu.Separator();
+        btnroles = new javax.swing.JMenuItem();
+        jSeparator4 = new javax.swing.JPopupMenu.Separator();
+        btnprivilegios = new javax.swing.JMenuItem();
+        jSeparator6 = new javax.swing.JPopupMenu.Separator();
+        btnconceptos = new javax.swing.JMenuItem();
+        jSeparator7 = new javax.swing.JPopupMenu.Separator();
+        btnmaterias = new javax.swing.JMenuItem();
+        jSeparator8 = new javax.swing.JPopupMenu.Separator();
+        btncarrera = new javax.swing.JMenuItem();
+        jSeparator9 = new javax.swing.JPopupMenu.Separator();
+        btnpreguntas = new javax.swing.JMenuItem();
+        menudocentes = new javax.swing.JMenu();
+        btnasignaconceptos = new javax.swing.JMenuItem();
+        menuestadocuentas = new javax.swing.JMenu();
+        btncrearcuenta = new javax.swing.JMenuItem();
+        jSeparator10 = new javax.swing.JPopupMenu.Separator();
+        btnabonarcuenta = new javax.swing.JMenuItem();
+        item = new javax.swing.JMenu();
+        btncerrarsesion = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -48,41 +70,33 @@ public class FrmInicio extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Consolas", 1, 36)); // NOI18N
         jLabel1.setText("UTHHTransfer");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Rodol\\Pictures\\Logo Uthh.png")); // NOI18N
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(40, 40, 40)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 513, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(53, 53, 53))
+                .addContainerGap(744, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(27, 27, 27)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(39, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel2))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 368, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(696, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
@@ -90,24 +104,96 @@ public class FrmInicio extends javax.swing.JFrame {
         jMenuBar1.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
         jMenuBar1.setMaximumSize(new java.awt.Dimension(150, 32769));
 
-        jMenu1.setText("Administracion");
-        jMenu1.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
+        jMenu2.setText("Sesión");
+        jMenu2.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
+
+        btnlogin.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
+        btnlogin.setText("Login");
+        jMenu2.add(btnlogin);
+        jMenu2.add(jSeparator5);
+
+        jMenuBar1.add(jMenu2);
+
+        menuadministracion.setText("Administracion");
+        menuadministracion.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
 
         btnpersonas.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
         btnpersonas.setText("Personas");
-        jMenu1.add(btnpersonas);
-        jMenu1.add(jSeparator1);
+        menuadministracion.add(btnpersonas);
+        menuadministracion.add(jSeparator1);
 
         btnservicios.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
         btnservicios.setText("Servicios");
-        jMenu1.add(btnservicios);
-        jMenu1.add(jSeparator2);
+        menuadministracion.add(btnservicios);
+        menuadministracion.add(jSeparator2);
 
         btntipocuentas.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
         btntipocuentas.setText("Tipo de Cuentas");
-        jMenu1.add(btntipocuentas);
+        menuadministracion.add(btntipocuentas);
+        menuadministracion.add(jSeparator3);
 
-        jMenuBar1.add(jMenu1);
+        btnroles.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
+        btnroles.setText("Roles");
+        menuadministracion.add(btnroles);
+        menuadministracion.add(jSeparator4);
+
+        btnprivilegios.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
+        btnprivilegios.setText("Privilegios");
+        menuadministracion.add(btnprivilegios);
+        menuadministracion.add(jSeparator6);
+
+        btnconceptos.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
+        btnconceptos.setText("Conceptos");
+        menuadministracion.add(btnconceptos);
+        menuadministracion.add(jSeparator7);
+
+        btnmaterias.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
+        btnmaterias.setText("Materias");
+        menuadministracion.add(btnmaterias);
+        menuadministracion.add(jSeparator8);
+
+        btncarrera.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
+        btncarrera.setText("Carreras");
+        menuadministracion.add(btncarrera);
+        menuadministracion.add(jSeparator9);
+
+        btnpreguntas.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
+        btnpreguntas.setText("Preguntas de Seguridad");
+        menuadministracion.add(btnpreguntas);
+
+        jMenuBar1.add(menuadministracion);
+
+        menudocentes.setText("Docentes");
+        menudocentes.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
+
+        btnasignaconceptos.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
+        btnasignaconceptos.setText("Asignar Conceptos");
+        menudocentes.add(btnasignaconceptos);
+
+        jMenuBar1.add(menudocentes);
+
+        menuestadocuentas.setText("Cuentas");
+        menuestadocuentas.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
+
+        btncrearcuenta.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
+        btncrearcuenta.setText("Crear Cuenta");
+        menuestadocuentas.add(btncrearcuenta);
+        menuestadocuentas.add(jSeparator10);
+
+        btnabonarcuenta.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
+        btnabonarcuenta.setText("Abonar Cuenta");
+        menuestadocuentas.add(btnabonarcuenta);
+
+        jMenuBar1.add(menuestadocuentas);
+
+        item.setText("Usuario: ");
+        item.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
+
+        btncerrarsesion.setFont(new java.awt.Font("Consolas", 1, 16)); // NOI18N
+        btncerrarsesion.setText("Cerrar Sesión");
+        item.add(btncerrarsesion);
+
+        jMenuBar1.add(item);
 
         setJMenuBar(jMenuBar1);
 
@@ -151,16 +237,38 @@ public class FrmInicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JMenuItem btnabonarcuenta;
+    public javax.swing.JMenuItem btnasignaconceptos;
+    public javax.swing.JMenuItem btncarrera;
+    public javax.swing.JMenuItem btncerrarsesion;
+    public javax.swing.JMenuItem btnconceptos;
+    public javax.swing.JMenuItem btncrearcuenta;
+    public javax.swing.JMenuItem btnlogin;
+    public javax.swing.JMenuItem btnmaterias;
     public javax.swing.JMenuItem btnpersonas;
+    public javax.swing.JMenuItem btnpreguntas;
+    public javax.swing.JMenuItem btnprivilegios;
+    public javax.swing.JMenuItem btnroles;
     public javax.swing.JMenuItem btnservicios;
     public javax.swing.JMenuItem btntipocuentas;
+    public javax.swing.JMenu item;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPopupMenu.Separator jSeparator1;
+    private javax.swing.JPopupMenu.Separator jSeparator10;
     private javax.swing.JPopupMenu.Separator jSeparator2;
+    private javax.swing.JPopupMenu.Separator jSeparator3;
+    private javax.swing.JPopupMenu.Separator jSeparator4;
+    private javax.swing.JPopupMenu.Separator jSeparator5;
+    private javax.swing.JPopupMenu.Separator jSeparator6;
+    private javax.swing.JPopupMenu.Separator jSeparator7;
+    private javax.swing.JPopupMenu.Separator jSeparator8;
+    private javax.swing.JPopupMenu.Separator jSeparator9;
+    public javax.swing.JMenu menuadministracion;
+    public javax.swing.JMenu menudocentes;
+    public javax.swing.JMenu menuestadocuentas;
     // End of variables declaration//GEN-END:variables
 }

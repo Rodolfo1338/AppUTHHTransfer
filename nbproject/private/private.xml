@@ -3,14 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Rodol/Documents/NetBeansProjects/AppUthhTransfer/src/Modelo/DAO/DAOTipocuentas.java</file>
-            <file>file:/C:/Users/Rodol/Documents/NetBeansProjects/AppUthhTransfer/src/Vista/FrmServicios.java</file>
-            <file>file:/C:/Users/Rodol/Documents/NetBeansProjects/AppUthhTransfer/src/Modelo/VO/VOTipocuentas.java</file>
-            <file>file:/C:/Users/Rodol/Documents/NetBeansProjects/AppUthhTransfer/src/Vista/FrmPersonas.java</file>
-            <file>file:/C:/Users/Rodol/Documents/NetBeansProjects/AppUthhTransfer/src/Vista/FrmInicio.java</file>
-            <file>file:/C:/Users/Rodol/Documents/NetBeansProjects/AppUthhTransfer/src/Controlador/ControladorTipoCuentas.java</file>
-            <file>file:/C:/Users/Rodol/Documents/NetBeansProjects/AppUthhTransfer/src/Controlador/ControladorMdi.java</file>
-            <file>file:/C:/Users/Rodol/Documents/NetBeansProjects/AppUthhTransfer/src/Vista/FrmTiposcuentas.java</file>
+            <file>file:/C:/Users/Rodol/Documents/NetBeansProjects/AppUthhTransfer/src/Vista/FRMRecuperacontraseña.java</file>
+            <file>file:/C:/Users/Rodol/Documents/NetBeansProjects/AppUthhTransfer/src/Controlador/ControladorNuevapsw.java</file>
+            <file>file:/C:/Users/Rodol/Documents/NetBeansProjects/AppUthhTransfer/src/Vista/FRMNuevacontraseña.java</file>
+            <file>file:/C:/Users/Rodol/Documents/NetBeansProjects/AppUthhTransfer/src/Controlador/ControladorBuscaPregunta.java</file>
         </group>
     </open-files>
 </project-private>
